@@ -27,9 +27,8 @@
         ));
         }  
 
-        $sql = "SELECT * FROM product ORDER BY id";
+        $sql = "SELECT * FROM receipt ORDER BY receipt_id";
         $stmt = $pdo->prepare($sql);
-        //Thiết lập kiểu dữ liệu trả về
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
         $stmt->execute();
         $resultSet = $stmt->fetchAll();
@@ -39,27 +38,28 @@
         <div class="grid-view">
             <div class="grid-item">
                 <img src="./database.png"/>
-                <a href="#"><b>In Danh Sách SP</b></a>
+                <a href="#" onClick="displayData()"><b>Xem dữ liệu hóa đơn</b></a>
             </div>
             <div class="grid-item">
                 <img src="./database.png"/>
-                <a href="#"><b>Thêm SP mới</b></a>
+                <a href="#"><b>Thêm DL</b></a>
             </div>
             <div class="grid-item">
                 <img src="./database.png"/>
-                <a href="#"><b>Xóa SP</b></a>
+                <a href="#"><b>Xóa DL</b></a>
             </div>
             <div class="grid-item">
                 <img src="./database.png"/>
-                <a href="#"><b>Cập nhật SP</b></a>
+                <a href="#"><b>Cập nhật DL</b></a>
             </div>
-            <div class="grid-item">
+            <div id ="displaychange" class="grid-item">
                 <table class="table table-bordered table-condensed">
                     <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>Prodcuct_Name</th>
-                        <th>Product_quantity</th>
+                        <th>receipt_id</th>
+                        <th>product_id</th>
+                        <th>seller_id</th>
+                        <th>customer_id</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -70,9 +70,10 @@
                     ?>
                     
                     <tr>
-                        <td scope="row"><?php echo $row['id'] ?></td>
-                        <td><?php echo $row['product_name'] ?></td>
-                        <td><?php echo $row['product_quantity'] ?></td>     
+                        <td scope="row"><?php echo $row['receipt_id'] ?></td>
+                        <td><?php echo $row['product_id'] ?></td>
+                        <td><?php echo $row['seller_id'] ?></td>
+                        <td><?php echo $row['customer_id']?></td>     
                     </tr>
                     
                     <?php
@@ -83,5 +84,6 @@
             </div>
         </div>
     </div>
+    <script src="./data.js"></script>
 </body>
 </html>

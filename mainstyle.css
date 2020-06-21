@@ -73,7 +73,7 @@ h1 {
     width: 100%;
     object-fit: cover;
 }
-.grid-item a {
+.grid-item a, .grid-item th {
     background-color: #4CAF50;
     border: none;
     color: white;
@@ -98,4 +98,8 @@ h1 {
     color: white;
     width: 100%;
     height: 200px;
+}
+
+#displaychange {
+    display: none;
 }
