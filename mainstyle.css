@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;  
+}
+
+.contact .item {
+    padding: 4px;
+}
+
+.contact .item:hover {
+    cursor: pointer;
+}
+
+.navbar {
+    background-color: gray;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.navbar .right {
+    float: right;
+}
+
+.navbar a:hover {
+    background-color: lightgreen;
+    cursor: pointer;
+}
+
+.banner img{
+    width: 100%;
+}
+
+h1 {
+    color: gray;
+    text-align: center;
+}
+
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+.grid-item {
+    background-color: gray;
+    box-shadow: 2px 2px 5px lightgray;
+    border-radius: 10px;
+    text-align: center;
+}
+.grid-item img {
+    height: calc(100% - 6.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+.grid-item a {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.grid-item a:hover {
+    background-color: brown;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 200px;
+}

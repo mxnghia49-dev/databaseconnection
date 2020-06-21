@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+}
+.navbar {
+    background-color: gray;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.navbar a {
+    float: left;
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: black;
+    cursor: pointer;
+}
+.style-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    height: 400px;
+    padding: 0 2rem;
+    background: gray;
+}
+.section-text {
+    color: white;
+}
+
+#content-section {
+    background-color: lightblue;
+    padding: 40px;
+    text-align: center;
+}
+
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 4rem;
+    max-width: 1280px;
+    margin: 0;
+    margin-bottom: 6rem;
+}
+
+.product {
+    background-color: gray;
+    box-shadow: 2px 2px 5px lightgray;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product-image {
+    width: 100%;
+    height: ;
+    object-fit: cover;
+}
