@@ -84,10 +84,6 @@ h1 {
     font-size: 16px;
     margin-bottom: 10px;
 }
-.grid-item th {
-    text-align: center;
-    color: white;
-}
 .grid-item a:hover {
     background-color: brown;
     cursor: pointer;
