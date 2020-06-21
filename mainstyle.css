@@ -73,7 +73,7 @@ h1 {
     width: 100%;
     object-fit: cover;
 }
-.grid-item a, .grid-item th {
+.grid-item a, {
     background-color: #4CAF50;
     border: none;
     color: white;
@@ -83,6 +83,10 @@ h1 {
     display: inline-block;
     font-size: 16px;
     margin-bottom: 10px;
+}
+.grid-item th {
+    text-align: center;
+    color: white;
 }
 .grid-item a:hover {
     background-color: brown;

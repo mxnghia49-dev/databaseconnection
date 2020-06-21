@@ -11,7 +11,6 @@
         ini_set('display_errors', 1);
 
         if (empty(getenv("DATABASE_URL"))){
-            echo '<p>The DB does not exist</p>';
             $pdo = new PDO('pgsql:host=localhost;port=5432;dbname=postgres', 'postgres', '123456');
         }  else {
             echo '<p>The DB exists</p>';
