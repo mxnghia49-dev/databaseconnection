@@ -24,7 +24,7 @@
         ));
         }  
 
-        $sql = "SELECT * FROM receipt ORDER BY receipt_id";
+        $sql = "SELECT * FROM product ORDER BY product_id";
         $stmt = $pdo->prepare($sql);
         $stmt->setFetchMode(PDO::FETCH_ASSOC);
         $stmt->execute();
@@ -53,10 +53,9 @@
                 <table class="table table-bordered table-condensed">
                     <thead>
                     <tr>
-                        <th>receipt_id</th>
-                        <th>product_id</th>
-                        <th>seller_id</th>
-                        <th>customer_id</th>
+                        <th>Product_ID</th>
+                        <th>Product_name</th>
+                        <th>NSX</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -67,10 +66,9 @@
                     ?>
                     
                     <tr>
-                        <td scope="row"><?php echo $row['receipt_id'] ?></td>
-                        <td><?php echo $row['product_id'] ?></td>
-                        <td><?php echo $row['seller_id'] ?></td>
-                        <td><?php echo $row['customer_id']?></td>     
+                        <td scope="row"><?php echo $row['product_id'] ?></td>
+                        <td><?php echo $row['product_name'] ?></td>
+                        <td><?php echo $row['nsx'] ?></td>     
                     </tr>
                     
                     <?php
