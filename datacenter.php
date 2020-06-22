@@ -39,7 +39,7 @@
             </div>
             <div class="grid-item">
             <ul>
-                <form name="InsertData" action="datacenter.php" method="POST" >
+                <form name="InsertData" action="insert.php" method="POST" >
                     <li>Receipt_id:</li><li><input type="text" name="receipt_id" /></li>
                     <li>Pruduct id:</li><li><input type="text" name="product_id" /></li>
                     <li>Seller_id:</li><li><input type="text" name="seller_id" /></li>
