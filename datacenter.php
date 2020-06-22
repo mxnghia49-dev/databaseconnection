@@ -9,11 +9,9 @@
 <body>
         <?php
         ini_set('display_errors', 1);
-
         if (empty(getenv("DATABASE_URL"))){
             $pdo = new PDO('pgsql:host=localhost;port=5432;dbname=postgres', 'postgres', '123456');
         }  else {
-            echo '<p>The DB exists</p>';
             echo getenv("dbname");
         $db = parse_url(getenv("DATABASE_URL"));
         $pdo = new PDO("pgsql:" . sprintf(
@@ -40,7 +38,31 @@
                 <a href="#" onClick="displayData()"><b>Xem dữ liệu hóa đơn</b></a>
             </div>
             <div class="grid-item">
-                <img src="./database.png"/>
+            <ul>
+                <form name="InsertData" action="datacenter.php" method="POST" >
+                    <li>Receipt_id:</li><li><input type="text" name="receipt_id" /></li>
+                    <li>Pruduct id:</li><li><input type="text" name="product_id" /></li>
+                    <li>Seller_id:</li><li><input type="text" name="seller_id" /></li>
+                    <li>Customer_id:</li><li><input type="text" name="customer_id" /></li>
+                    <li><input type="submit" /></li>
+                </form>
+                <?php
+                $sql = "INSERT INTO repceipt(receipt_id, product_id, seller_id, customer_id) VALUES ('$_POST[receipt_id]','$_POST[product_id]','$_POST[seller_id]', '$_POST[customer_id]')";
+                $stmt = $pdo->prepare($sql);
+                
+                 if (is_null($_POST[id])) {
+                   alert "ID must be not null";
+                 }
+                 else
+                 {
+                    if($stmt->execute() == TRUE){
+                        alert "Record inserted successfully.";
+                    } else {
+                        alert "Error inserting record: ";
+                    }
+                 }
+                ?>
+            </ul>
                 <a href="#"><b>Thêm DL</b></a>
             </div>
             <div class="grid-item">
@@ -51,6 +73,7 @@
                 <img src="./database.png"/>
                 <a href="#"><b>Cập nhật DL</b></a>
             </div>
+            //display all data of a tables
             <div id ="displaychange" class="grid-item">
                 <table class="table table-bordered table-condensed">
                     <thead>
@@ -76,7 +99,7 @@
                     </tr>
                     
                     <?php
-                        }
+                            }
                     ?>
                     </tbody>
                 </table>
