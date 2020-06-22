@@ -2,12 +2,18 @@
 <html>
 <body>
 
-<h1>INSERT DATA TO DATABASE</h1>
+<h1>Cập nhật DL sản phẩm</h1>
 
 <?php
 ini_set('display_errors', 1);
 echo "Update database!";
 ?>
+
+<form name="update" action="UpdateData.php" method="POST">
+    <label for="id">ID sản phẩm:</label><input type="text" name="id" />
+    <label for="newname">Tên mới:</label><input type="text" name="newname" /><br>
+    <input type="submit" value="Cập Nhật">
+</form>
 
 <?php
 
@@ -41,7 +47,7 @@ if (empty(getenv("DATABASE_URL"))){
 
         // return the number of row affected
         //return $stmt->rowCount();
-$sql = "UPDATE product SET product_name = 'gun' WHERE id = '1'";
+$sql = "UPDATE product SET product_name = '$_POST[newname]' WHERE id = '$_POST[id]'";
       $stmt = $pdo->prepare($sql);
 if($stmt->execute() == TRUE){
     echo "Record updated successfully.";
