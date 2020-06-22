@@ -1,3 +1,4 @@
+<html>
 <?php
 ini_set('display_errors', 1);
 if (empty(getenv("DATABASE_URL"))){
@@ -31,3 +32,4 @@ $pdo = new PDO("pgsql:" . sprintf(
   }
  ?>
 ?>
+</html>
