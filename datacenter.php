@@ -31,7 +31,7 @@
         $resultSet = $stmt->fetchAll();
     ?>
     <h1>ATN cơ sở dữ liệu</h1>
-    <button onclick="location.hrel='index.php'">Trờ về trang chủ</button>
+    <button onclick="location.href='index.php'">Trờ về trang chủ</button>
     <div class="container">
         <div class="grid-view">
             <div class="grid-item">
