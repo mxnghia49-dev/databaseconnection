@@ -19,14 +19,14 @@ $pdo = new PDO("pgsql:" . sprintf(
  $stmt = $pdo->prepare($sql);
  
   if (is_null($_POST[id])) {
-    alert "ID must be not null";
+    echo "ID must be not null";
   }
   else
   {
      if($stmt->execute() == TRUE){
-         alert "Record inserted successfully.";
+         echo "Record inserted successfully.";
      } else {
-         alert "Error inserting record: ";
+         echo "Error inserting record: ";
      }
   }
  ?>
