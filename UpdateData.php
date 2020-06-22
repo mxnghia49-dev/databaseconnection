@@ -10,8 +10,8 @@ echo "Update database!";
 ?>
 
 <form name="update" action="UpdateData.php" method="POST">
-    <label for="id">ID sản phẩm:</label><input type="text" name="id" />
-    <label for="newname">Tên mới:</label><input type="text" name="newname" /><br>
+    <label for="id">ID sản phẩm:</label><input type="text" name="id" placeholder="nhập 1 id sản phẩm"/>
+    <label for="newname">Tên mới:</label><input type="text" name="newname" placeholder="nhập tên mới cho id sản phẩm"/><br>
     <input type="submit" value="Cập Nhật">
 </form>
 

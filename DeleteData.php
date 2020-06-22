@@ -7,7 +7,7 @@
 <h4>ID SP cần xóa</h4>
 
 <form name="delete" method="POST" action="DeleteData.php">
-    <lable for="id">ID Sản Phẩm</label><input type="text" name="id" /><br>
+    <lable for="id">ID Sản Phẩm</label><input type="text" name="id" placeholder="nhập id sp cần xóa"/><br>
     <input type="submit" value="Xóa">
 </form>
 
