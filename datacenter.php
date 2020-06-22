@@ -43,11 +43,11 @@
             </div>
             <div class="grid-item">
                 <img src="./database.png"/>
-                <a href="#"><b>Xóa DL</b></a>
+                <a href="./DeleteData.php"><b>Xóa DL</b></a>
             </div>
             <div class="grid-item">
                 <img src="./database.png"/>
-                <a href="#"><b>Cập nhật DL</b></a>
+                <a href="UpdateData.php"><b>Cập nhật DL</b></a>
             </div>
             <div id ="displaychange" class="grid-item">
                 <table class="table table-bordered table-condensed">
