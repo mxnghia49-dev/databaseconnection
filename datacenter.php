@@ -38,21 +38,8 @@
                 <a href="#" onClick="displayData()"><b>Xem dữ liệu hóa đơn</b></a>
             </div>
             <div class="grid-item">
-            <style>
-            li {
-            list-style: none;
-            }
-            </style>
-            <ul>
-                <form name="InsertData" action="insert.php" method="POST" >
-                    <li>Receipt_id:</li><li><input type="text" name="receipt_id" /></li>
-                    <li>Pruduct id:</li><li><input type="text" name="product_id" /></li>
-                    <li>Seller_id:</li><li><input type="text" name="seller_id" /></li>
-                    <li>Customer_id:</li><li><input type="text" name="customer_id" /></li>
-                    <li><input type="submit" value="Thêm DL" /></li>
-                </form>
-            </ul>
-                <a href="#"><b>Thêm DL</b></a>
+                <img src="./database.png" />
+                <a href="./InsertData.php"><b>Thêm DL</b></a>
             </div>
             <div class="grid-item">
                 <img src="./database.png"/>
