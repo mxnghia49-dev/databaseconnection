@@ -44,7 +44,7 @@
             }
             </style>
             <ul>
-                <form name="InsertData" action="datacenter.php" method="POST" >
+                <form name="InsertData" action="insert.php" method="POST" >
                     <li>Receipt_id:</li><li><input type="text" name="receipt_id" /></li>
                     <li>Pruduct id:</li><li><input type="text" name="product_id" /></li>
                     <li>Seller_id:</li><li><input type="text" name="seller_id" /></li>
@@ -62,7 +62,6 @@
                 <img src="./database.png"/>
                 <a href="#"><b>Cập nhật DL</b></a>
             </div>
-            //display all data of a tables
             <div id ="displaychange" class="grid-item">
                 <table class="table table-bordered table-condensed">
                     <thead>
