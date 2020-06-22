@@ -12,7 +12,7 @@ list-style: none;
 <body>
 <h1>INSERT DATA TO DATABASE</h1>
     <ul>
-        <form name="InsertData" action="insert.php" method="POST" >
+        <form name="InsertData" action="InsertData.php" method="POST" >
             <li>Receipt_id:</li><li><input type="text" name="receipt_id" /></li>
             <li>Pruduct id:</li><li><input type="text" name="product_id" /></li>
             <li>Seller_id:</li><li><input type="text" name="seller_id" /></li>

@@ -39,7 +39,7 @@
             </div>
             <div class="grid-item">
                 <img src="./database.png" />
-                <a href="./InsertData.php"><b>Thêm DL</b></a>
+                <a href="./InsertData.php" target="_self"><b>Thêm DL</b></a>
             </div>
             <div class="grid-item">
                 <img src="./database.png"/>
