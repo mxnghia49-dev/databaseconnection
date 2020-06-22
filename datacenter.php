@@ -39,13 +39,12 @@
             </div>
             <div class="grid-item">
                 <form name="InsertData" action="insert.php" method="POST" >
-                    <li>Receipt_id:</li><li><input type="text" name="receipt_id" /></li>
-                    <li>Pruduct id:</li><li><input type="text" name="product_id" /></li>
-                    <li>Seller_id:</li><li><input type="text" name="seller_id" /></li>
-                    <li>Customer_id:</li><li><input type="text" name="customer_id" /></li>
-                    <li><input type="submit" /></li>
+                    Receipt_id:<input type="text" name="receipt_id" />
+                    Pruduct id:<input type="text" name="product_id" />
+                    Seller_id:<input type="text" name="seller_id" />
+                    Customer_id: <input type="text" name="customer_id" />
                 </form>
-                <a href="#"><b>Thêm DL</b></a>
+                <a type="submit"><b>Thêm DL</b></a>
             </div>
             <div class="grid-item">
                 <img src="./database.png"/>
