@@ -13,7 +13,6 @@
 
 <?php
 ini_set('display_errors', 1);
-echo "Insert database!";
 ?>
 
 <?php
@@ -35,7 +34,7 @@ if (empty(getenv("DATABASE_URL"))){
    ));
 }  
 
-$sql = "DELETE FROM product WHERE id = '$_POST[id]'";
+$sql = "DELETE FROM product WHERE product_id = '$_POST[id]'";
 $stmt = $pdo->prepare($sql);
 if($stmt->execute() == TRUE){
     echo "deleted successfully.";
